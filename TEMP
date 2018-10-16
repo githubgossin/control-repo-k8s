@@ -1,0 +1,12 @@
+OS=ubuntu
+VERSION=1.10.9
+CONTAINER_RUNTIME=docker
+CNI_PROVIDER=weave
+ETCD_INITIAL_CLUSTER=localhost:2379               dig coord-1.borg.trek | grep -Po '192\.168\.180\.\d+'
+ETCD_IP="%{::ipaddress_ens3}"
+KUBE_API_ADVERTISE_ADDRESS="%{::ipaddress_ens3}"
+INSTALL_DASHBOARD=true
+
+docker run --rm -v $(pwd):/mnt --env-file .env puppet/kubetool:3.0.1
+
+lager Ubuntu.yaml og localhost.yaml
