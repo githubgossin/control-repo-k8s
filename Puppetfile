@@ -25,6 +25,7 @@ mod 'ajjahn-dns',
   :commit => '57946eb'
 mod 'puppetlabs/concat'
 
+mod 'cristifalcas/etcd'
 mod 'puppetlabs/kubernetes'
 mod 'puppetlabs/helm'
 mod 'puppetlabs/translate'
