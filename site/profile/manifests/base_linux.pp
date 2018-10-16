@@ -39,28 +39,5 @@ class profile::base_linux {
     require => File['/root/.ssh'],
   }
 
-# on all Ubuntu's with two network interfaces, fix routing
-  unless $::hostname =~ /(manager|monitor|logs|trends|grafana)/ {
-    network::routing_table { 'table-ens4':
-      table_id => 100,
-    }
-    network::rule { 'ens4':
-      iprule  => ['from 192.168.190.0/24 lookup table-ens4', 'from 172.17.0.0/16 lookup table-ens4', ],
-      require => Network::Routing_table['table-ens4'],
-    }
-    network::route { 'ens4':
-      ipaddress => [ '0.0.0.0', '192.168.190.0', '172.17.0.0', ],
-      netmask   => [ '0.0.0.0', '255.255.255.0', '255.255.0.0', ],
-      gateway   => [ '192.168.190.1', false, false, ],
-      table     => [ 'table-ens4', 'table-ens4', 'table-ens4', ],
-      require   => Network::Routing_table['table-ens4'],
-    }
-  }
-
-  unless $::fqdn == 'monitor.borg.trek' {
-    include ::profile::sensu::client
-  }
-
   include ::profile::dns::client
-  include ::profile::elk::filebeat
 }

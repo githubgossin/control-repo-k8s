@@ -26,6 +26,7 @@ mod 'ajjahn-dns',
 mod 'puppetlabs/concat'
 
 mod 'puppetlabs/kubernetes'
+mod 'puppetlabs/helm'
 mod 'puppetlabs/translate'
 mod 'puppet/archive'
 mod 'puppet/wget'
