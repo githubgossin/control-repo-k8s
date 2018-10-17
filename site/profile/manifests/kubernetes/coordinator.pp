@@ -1,0 +1,3 @@
+class {'kubernetes':
+  controller => true,
+}

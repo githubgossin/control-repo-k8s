@@ -25,13 +25,12 @@ mod 'ajjahn-dns',
   :commit => '57946eb'
 mod 'puppetlabs/concat'
 
-mod 'cristifalcas/etcd',
-  :git    => 'https://github.com/cristifalcas/puppet-etcd',
-  :commit => '7555287'
+#mod 'cristifalcas/etcd',
+#  :git    => 'https://github.com/cristifalcas/puppet-etcd',
+#  :commit => '7555287'
 mod 'puppetlabs/kubernetes'
 mod 'puppetlabs/helm'
 mod 'puppetlabs/translate'
 mod 'puppet/archive'
 mod 'puppet/wget'
 mod 'puppetlabs/apt'
-mod 'puppetlabs/docker'

@@ -1,0 +1,3 @@
+class {'kubernetes':
+  worker => true,
+}
