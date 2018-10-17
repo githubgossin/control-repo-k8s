@@ -1,3 +1,3 @@
-class {'kubernetes':
-  worker => true,
-}
+#class { 'kubernetes': 
+#  worker => true,
+#}

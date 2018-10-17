@@ -10,3 +10,10 @@ INSTALL_DASHBOARD=true
 docker run --rm -v $(pwd):/mnt --env-file .env puppet/kubetool:3.0.1
 
 lager Ubuntu.yaml og localhost.yaml
+
+docker run --rm -v $(pwd):/mnt -e OS=ubuntu -e VERSION=1.10.9 -e CONTAINER_RUNTIME=docker -e CNI_PROVIDER=weave -e ETCD_INITIAL_CLUSTER=coords-0:192.168.180.103,coords-1:192.168.180.112,coords-2:192.168.180.110 -e ETCD_IP="%{::ipaddress_ens3}" -e KUBE_API_ADVERTISE_ADDRESS="%{::ipaddress_ens3}" -e INSTALL_DASHBOARD=true puppet/kubetool:3.0.1
+
+lager
+root@coord-1:~# ls
+Ubuntu.yaml  coords-0.yaml  coords-1.yaml  coords-2.yaml
+

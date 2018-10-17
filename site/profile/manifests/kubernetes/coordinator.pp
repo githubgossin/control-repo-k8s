@@ -1,3 +1,3 @@
-class {'kubernetes':
-  controller => true,
-}
+#class { 'kubernetes':
+#  controller => true,
+#}
