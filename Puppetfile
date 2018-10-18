@@ -28,7 +28,7 @@ mod 'puppetlabs/concat'
 #mod 'cristifalcas/etcd',
 #  :git    => 'https://github.com/cristifalcas/puppet-etcd',
 #  :commit => '7555287'
-mod 'puppetlabs/kubernetes'
+mod 'puppetlabs/kubernetes', '3.0.1'
 mod 'puppetlabs/helm'
 mod 'puppetlabs/translate'
 mod 'puppet/archive'
