@@ -10,11 +10,8 @@ class profile::kubernetes::worker {
 #    docker_key_id       => '9DC858229FC7DD38854AE2D88D81803C0EBFCD88',
 #    docker_key_source   => 'https://download.docker.com/linux/ubuntu/gpg',
 #    kubernetes_apt_release => "kubernetes-xenial",
-#    kubernetes_version     => '1.12.1',
-#    kubernetes_package_version     => '1.12.1-00',
-#    etcd_version           => '3.2.24',
-#    etcd_archive           => 'etcd-v3.2.24-linux-amd64.tar.gz',
-#    etcd_source            => 'https://github.com/coreos/etcd/releases/download/v3.2.24/etcd-v3.2.24-linux-amd64.tar.gz',
+#    kubernetes_version         => '1.10.9',
+#    kubernetes_package_version => '1.10.9-00',
 #  }
 
 }
