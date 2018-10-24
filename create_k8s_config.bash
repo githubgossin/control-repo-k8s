@@ -8,6 +8,10 @@ cat Ubuntu.yaml >> hieradata/common.yaml
 mkdir hieradata/nodes
 for f in controller-*; do cat $f >> hieradata/nodes/$(basename $f .yaml).borg.trek.yaml;done
 
+echo "REMEMBER TO PUT DATA IN site/profile/files/etc/kubernetes/cloud.conf"
+echo "(hit ENTER when done)"
+read
+
 # uncomment k8s
 sed -i '/.*/s/^#//' site/profile/manifests/kubernetes/worker.pp
 sed -i '/.*/s/^#//' site/profile/manifests/kubernetes/controller.pp
