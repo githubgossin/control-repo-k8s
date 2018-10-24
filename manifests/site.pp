@@ -33,8 +33,8 @@ node 'manager.borg.trek' {
   include ::role::manager
 }
 
-node /^coord-\d+\.borg\.trek$/ {
-  include ::role::coordinator
+node /^controller-\d+\.borg\.trek$/ {
+  include ::role::controller
 }
 
 node /^worker-\d+\.borg\.trek$/ {
