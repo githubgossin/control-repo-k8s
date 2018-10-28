@@ -1,36 +1,33 @@
 forge "http://forge.puppet.com"
 
-mod 'puppetlabs/stdlib'
+mod 'puppetlabs/stdlib',     '5.1.0'
 
-mod 'saz/timezone'
-mod 'stm/debconf'
+mod 'saz/timezone',          '5.0.2'
+mod 'stm/debconf',           '2.3.0'
 
-mod 'dalen-dnsquery'
-mod 'puppetlabs/ntp'
-mod 'puppetlabs/puppetdb'
-mod 'puppetlabs/postgresql'
-mod 'puppetlabs/firewall'
-mod 'puppetlabs/inifile'
+mod 'dalen-dnsquery',        '3.0.0'
+mod 'puppetlabs/ntp',        '7.3.0'
+mod 'puppetlabs/puppetdb',   '7.1.0'
+mod 'puppetlabs/postgresql', '5.10.0'
+mod 'puppetlabs/firewall',   '1.14.0'
+mod 'puppetlabs/inifile',    '2.4.0'
 
-mod 'puppet/r10k'
-mod 'puppetlabs/ruby'
-mod 'puppetlabs/gcc'
-mod 'puppet/make'
-mod 'puppetlabs/vcsrepo'
-mod 'puppetlabs/git'
-mod 'gentoo/portage'
+mod 'puppet/r10k',           '6.7.0'
+mod 'puppetlabs/ruby',       '1.0.0'
+mod 'puppetlabs/gcc',        '0.3.0'
+mod 'puppet/make',           '2.1.1'
+mod 'puppetlabs/vcsrepo',    '2.4.0'
+mod 'puppetlabs/git',        '0.5.0'
+mod 'gentoo/portage',        '2.3.0'
 
 mod 'ajjahn-dns',
   :git    => 'https://github.com/ajjahn/puppet-dns',
   :commit => '57946eb'
-mod 'puppetlabs/concat'
+mod 'puppetlabs/concat',     '5.1.0'
 
-#mod 'cristifalcas/etcd',
-#  :git    => 'https://github.com/cristifalcas/puppet-etcd',
-#  :commit => '7555287'
 mod 'puppetlabs/kubernetes', '3.0.1'
-mod 'puppetlabs/helm'
-mod 'puppetlabs/translate'
-mod 'puppet/archive'
-mod 'puppet/wget'
-mod 'puppetlabs/apt'
+mod 'puppetlabs/helm',       '1.1.0'
+mod 'puppetlabs/translate',  '1.2.0'
+mod 'puppet/archive',        '3.2.1'
+mod 'puppet/wget',           '2.0.1'
+mod 'puppetlabs/apt',        '6.1.1'
