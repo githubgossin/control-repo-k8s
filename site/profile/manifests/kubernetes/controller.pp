@@ -16,8 +16,8 @@ class profile::kubernetes::controller {
 #    docker_key_id              => '9DC858229FC7DD38854AE2D88D81803C0EBFCD88',
 #    docker_key_source          => 'https://download.docker.com/linux/ubuntu/gpg',
 #    kubernetes_apt_release     => 'kubernetes-xenial',
-#    kubernetes_version         => '1.10.9',
-#    kubernetes_package_version => '1.10.9-00',
+#    kubernetes_version         => '1.16.2',
+#    kubernetes_package_version => '1.16.2-00',
 #  }
 
 }
