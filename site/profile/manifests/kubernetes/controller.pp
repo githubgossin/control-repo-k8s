@@ -9,7 +9,7 @@ class profile::kubernetes::controller {
 #  class { 'kubernetes':
 #    controller                 => true,
 #    docker_package_name        => 'docker-ce',
-#    docker_version             => '18.06.1~ce~3-0~ubuntu',
+#    docker_version             => '5:19.03.4~3-0~ubuntu-bionic',
 #    docker_apt_location        => 'https://download.docker.com/linux/ubuntu',
 #    docker_apt_release         => "${::lsbdistcodename}",
 #    docker_apt_repos           => 'stable',
